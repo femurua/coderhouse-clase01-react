@@ -1,5 +1,7 @@
 import React from "react";
 import logo from "./img/logo.png";
+import Carrito from './Carrito';
+
 
 const Header = () => {
     return(
@@ -12,18 +14,19 @@ const Header = () => {
             
                 <div className="collapse navbar-collapse" id="navbarColor01">
                     <ul className="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a className="nav-link" href="#">Herramientas
-                        <span className="visually-hidden">(current)</span>
-                        </a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Materiales</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Cursos</a>
-                    </li>
+                        <li class="nav-item">
+                            <a className="nav-link" href="#">Herramientas
+                            <span className="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Materiales</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Cursos</a>
+                        </li>
                     </ul>
+                    <Carrito cantidad = "30"/>
                 </div>
             </div>
         </nav>
