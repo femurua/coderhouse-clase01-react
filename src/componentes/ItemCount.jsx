@@ -6,6 +6,7 @@ const ItemCount = (prop) => {
     const [cantidad, setCantidad] = useState(prop.inicial);
     const [itemStock, setItemStock] = useState(prop.stock);
     const [itemOnAdd, setItemOnAdd] = useState(prop.onAdd);
+   
 
     const decrementarCantidad = (valor) => {
         if(valor > 0){
